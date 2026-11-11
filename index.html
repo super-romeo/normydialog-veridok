@@ -8,6 +8,10 @@
 <meta name="description" content="Для проектировщиков и строителей: вопрос по СП, ГОСТу или СНиПу и ответ со ссылками на конкретные пункты документов, без поиска по PDF.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Нормы с ответом</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Нормы с ответом</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Вопрос по нормам — ответ со ссылкой на пункт СП или ГОСТа за минуту</h1>
-    <p class="sub">Для проектировщиков, инженеров ПТО, технадзора и прорабов: вы спрашиваете своими словами — например, какое минимальное расстояние или какой класс нужен, — а сервис отвечает по тексту сводов правил и ГОСТов и показывает пункты, на которые опирается ответ.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для проектировщиков, инженеров ПТО</p>
+      <h1 class="rise" style="--i:1">Вопрос по нормам&nbsp;<span class="soft">— ответ со ссылкой на пункт СП или ГОСТа за минуту</span></h1>
+      <p class="rise" style="--i:2">Для проектировщиков, инженеров ПТО, технадзора и прорабов: вы спрашиваете своими словами — например, какое минимальное расстояние или какой класс нужен, — а сервис отвечает по тексту сводов правил и ГОСТов и показывает пункты, на которые опирается ответ.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="130" y="168" font-size="40" fill="#0a1524" font-weight="600">Вопрос по нормам</text><line x1="110" y1="214" x2="1090" y2="214" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" fill="#12397a" rx="8" /><text x="200" y="294" font-size="32" fill="#0a1524" font-weight="600">Ссылки на пункты</text><rect x="130" y="350" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="200" y="384" font-size="32" fill="#0a1524" font-weight="600">Своими словами</text><rect x="130" y="440" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="200" y="474" font-size="32" fill="#0a1524" font-weight="600">История вопросов</text><rect x="130" y="530" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="200" y="564" font-size="32" fill="#0a1524" font-weight="600">По тексту норм</text><rect x="700" y="260" width="370" height="400" fill="#dfe8f7" rx="20" /><text x="730" y="330" font-size="34" fill="#0a1524" font-weight="600">Пункт СП</text><rect x="740" y="450" width="48" height="160" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="818" y="510" width="48" height="100" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="896" y="400" width="48" height="210" fill="#12397a" rx="8" /><rect x="974" y="530" width="48" height="80" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Проектировщиков, инженеров ПТО</dd></div>
+      <div><dt>Отвечает</dt><dd>По тексту норм</dd></div>
+      <div><dt>Показывает</dt><dd>Пункты на которые опирается</dd></div>
+      <div><dt>Пока</dt><dd>Сервис в подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Ответ своими словами</b><span>Вопрос как коллеге, ответ — по тексту норм, а не по памяти.</span><br><a class="btn" href="price.html" data-ev="feature_otvet">Мне это нужно</a></div>
-      <div class="card"><b>Ссылки на пункты</b><span>Номер документа и пункта, на который опирается ответ, чтобы проверить самому.</span><br><a class="btn" href="price.html" data-ev="feature_punkty">Мне это нужно</a></div>
-      <div class="card"><b>Действующие редакции</b><span>Ответ по действующей редакции документа с отметкой, если пункт изменён.</span><br><a class="btn" href="price.html" data-ev="feature_redakcii">Мне это нужно</a></div>
-      <div class="card"><b>История вопросов</b><span>Свои вопросы и ответы сохраняются и находятся поиском.</span><br><a class="btn" href="price.html" data-ev="feature_istoriya">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="148" font-size="34" fill="#0a1524" font-weight="600">Ответ своими словами</text><rect x="140" y="210" width="500" height="150" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><polygon points="200,360 240,360 210,400" fill="#ffffff" /><rect x="140" y="430" width="200" height="52" fill="#12397a" rx="26" /><rect x="180" y="250" width="320" height="18" fill="#dde2ea" rx="8" /><rect x="180" y="290" width="220" height="18" fill="#b9c3d2" rx="8" /></svg></div>
+        <h3>Ответ своими словами</h3><p>Вопрос как коллеге, ответ — по тексту норм, а не по памяти.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_otvet">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="148" font-size="34" fill="#0a1524" font-weight="600">Ссылки на пункты</text><rect x="140" y="200" width="340" height="270" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="170" y="236" width="200" height="18" fill="#dde2ea" rx="8" /><rect x="170" y="288" width="260" height="18" fill="#12397a" rx="8" /><rect x="170" y="340" width="150" height="18" fill="#dde2ea" rx="8" /><rect x="170" y="392" width="180" height="18" fill="#dde2ea" rx="8" /><circle cx="560" cy="330" r="52" fill="#dfe8f7" /><polyline points="534,332 552,354 590,300" fill="none" stroke="#12397a" stroke-width="8" /></svg></div>
+        <h3>Ссылки на пункты</h3><p>Номер документа и пункта, на который опирается ответ, чтобы проверить самому.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_punkty">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="148" font-size="34" fill="#0a1524" font-weight="600">Действующие редакции</text><circle cx="400" cy="340" r="108" fill="#ffffff" stroke="#dde2ea" stroke-width="8" /><circle cx="400" cy="340" r="10" fill="#12397a" /><line x1="400" y1="340" x2="400" y2="260" stroke="#12397a" stroke-width="6" /><line x1="400" y1="340" x2="470" y2="370" stroke="#566174" stroke-width="6" /></svg></div>
+        <h3>Действующие редакции</h3><p>Ответ по действующей редакции документа с отметкой, если пункт изменён.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_redakcii">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="148" font-size="34" fill="#0a1524" font-weight="600">История вопросов</text><rect x="140" y="206" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="152,230 164,240 178,220" fill="none" stroke="#12397a" stroke-width="6" /><rect x="210" y="216" width="240" height="24" fill="#dde2ea" rx="12" /><rect x="140" y="294" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="152,318 164,328 178,308" fill="none" stroke="#12397a" stroke-width="6" /><rect x="210" y="304" width="160" height="24" fill="#b9c3d2" rx="12" /><rect x="140" y="382" width="44" height="44" fill="#dfe8f7" rx="8" /><rect x="210" y="392" width="280" height="24" fill="#dde2ea" rx="12" /></svg></div>
+        <h3>История вопросов</h3><p>Свои вопросы и ответы сохраняются и находятся поиском.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_istoriya">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Инженер-проектировщик готовит раздел по пожарной безопасности и спрашивает, какая ширина эвакуационного выхода нужна для этажа на 60 человек. Ответ приходит с номерами пунктов свода правил, на которые он опирается; инженер открывает пункт, сверяет и переносит требование в пояснительную записку.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Инженер-проектировщик готовит раздел по пожарной безопасности и спрашивает, какая ширина эвакуационного выхода нужна для этажа на 60 человек. Ответ приходит с номерами пунктов свода правил, на которые он опирается; инженер открывает пункт, сверяет и переносит требование в пояснительную записку.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="34" fill="#0a1524" font-weight="600" text-anchor="middle">60 человек</text><circle cx="600" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="34" fill="#0a1524" font-weight="600" text-anchor="middle">свода правил</text><circle cx="960" cy="150" r="20" fill="#12397a" /><text x="960" y="230" font-size="34" fill="#0a1524" font-weight="600" text-anchor="middle">открывает пункт</text><rect x="120" y="300" width="960" height="420" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="170" y="390" font-size="38" fill="#0a1524" font-weight="600">пояснительную записку</text><text x="170" y="470" font-size="32" fill="#566174">пожарной безопасности</text><rect x="170" y="540" width="64" height="64" fill="#dfe8f7" rx="12" /><rect x="266" y="540" width="64" height="64" fill="#12397a" rx="12" /><rect x="362" y="540" width="64" height="64" fill="#dde2ea" rx="12" /><rect x="458" y="540" width="64" height="64" fill="#b9c3d2" rx="12" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>В строительстве на каждое решение есть норма: своды правил, ГОСТы, старые СНиПы, на которые до сих пор ссылаются. Проектировщик, инженер ПТО или технадзора за день несколько раз ищет ответ на конкретный вопрос — какое расстояние, какой класс бетона, какая нагрузка, какая ширина прохода — и тратит на это время, листая длинные документы.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>В строительстве на каждое решение есть норма: своды правил, ГОСТы, старые СНиПы, на которые до сих пор ссылаются. Проектировщик, инженер ПТО или технадзора за день несколько раз ищет ответ на конкретный вопрос — какое расстояние, какой класс бетона, какая нагрузка, какая ширина прохода — и тратит на это время, листая длинные документы.</p>
     <p>Поиск по словам в PDF помогает плохо: нужный пункт сформулирован иначе, требование разнесено по нескольким документам, а часть пунктов изменена поздними редакциями. Спросить коллегу быстрее, но коллега отвечает по памяти, и ответ всё равно приходится проверять.</p>
     <p>Сервис отвечает на вопросы по нормам так, как ответил бы опытный коллега, но с опорой на текст документов. Вы пишете вопрос своими словами — как в разговоре, — и получаете короткий ответ, а под ним — номера документов и пунктов, на которых он основан.</p>
     <p>Ссылка на пункт — главное в ответе. Её можно открыть и сверить самому, прежде чем переносить требование в проект, предписание или акт. Если ответ складывается из нескольких документов, сервис показывает каждый из них, а если пункт изменён, отмечает это.</p>
@@ -104,31 +138,34 @@
     <p>Работать можно в браузере на компьютере и с телефона на объекте, ничего не устанавливая. Для команды проектной организации или подрядчика есть общий доступ: каждый задаёт свои вопросы, а руководитель видит общую историю.</p>
     <p>Начать можно с одного вопроса, который вы искали на этой неделе: сравните ответ сервиса и пункт, который нашли сами. Так быстрее всего понять, сэкономит ли он вам время.</p>
     <p>Сервис рассчитан на проектировщиков, инженеров, технадзор, прорабов и сметчиков. Сейчас он в подготовке: сначала мы проверяем, нужен ли он специалистам, и только потом его запускаем.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>По каким документам отвечает сервис?</h3>
-    <p>По сводам правил, ГОСТам и СНиПам, на которые ссылаются в проектировании и строительстве.</p>
-    <h3>Можно ли проверить ответ?</h3>
-    <p>Да. Под каждым ответом — номера документов и пунктов, на которые он опирается.</p>
-    <h3>Заменяет ли сервис нормы?</h3>
-    <p>Нет. Он помогает найти и прочитать норму; решение и ответственность остаются за инженером.</p>
-    <h3>Можно ли работать командой?</h3>
-    <p>Да, у команды общий доступ и общая история вопросов.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он специалистам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>По каким документам отвечает сервис?</h3><p>По сводам правил, ГОСТам и СНиПам, на которые ссылаются в проектировании и строительстве.</p></div>
+      <div class="split flip"><h3>Можно ли проверить ответ?</h3><p>Да. Под каждым ответом — номера документов и пунктов, на которые он опирается.</p></div>
+      <div class="split flip"><h3>Заменяет ли сервис нормы?</h3><p>Нет. Он помогает найти и прочитать норму; решение и ответственность остаются за инженером.</p></div>
+      <div class="split flip"><h3>Можно ли работать командой?</h3><p>Да, у команды общий доступ и общая история вопросов.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он специалистам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Задайте первый вопрос</h2>
-    <p><label>Чем вы занимаетесь<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>Проектирование</option><option>ПТО и технадзор</option><option>Строительство и прорабы</option><option>Другое</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Задайте первый вопрос</h2>
+    </div>
+    <div class="tile stack">
+      <label>Чем вы занимаетесь<select data-ev-focus="form_start"><option value="">— выберите —</option><option>Проектирование</option><option>ПТО и технадзор</option><option>Строительство и прорабы</option><option>Другое</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Нормы с ответом</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Помощь в поиске и чтении норм. Не заменяет нормативные документы; решение и ответственность остаются за специалистом.</p>
+  <p>Помощь в поиске и чтении норм. Не заменяет нормативные документы; решение и ответственность остаются за специалистом.</p>
 </div></footer>
 
 </body>
